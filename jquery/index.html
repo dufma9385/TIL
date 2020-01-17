@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DDubullim</title>
+
+<style type="text/css">
+@import
+"css/headStyle.css";
+
+#content{
+	float:left;
+	width:70%;
+	height:90%;
+	background:white;
+	color:#c2f0c2;
+	border:1px solid #c2f0c2;
+	text-align: center;
+	border-radius:20px;
+	overflow:auto;
+	/* display:inline; */
+}
+.profile{
+	float:right;
+	width:29%;
+	height:90%;
+	background:whilt;
+	color:#878792;
+	border:1px solid #c2f0c2;
+	text-align: center;
+	border-radius:20px;
+	margin-left:1px;
+	overflow:auto;
+	padding:10px;
+	table-layout: fixed;
+	padding:50px;
+}
+#im{
+	max-width: 100%;
+	height: auto;
+	border:3px solid #c2f0c2;
+	padding: 0px;
+	display:inline-block;
+	margin:10px
+}
+#a1{
+	max-width: 100%;
+	height: auto;
+	border:3px solid #ffcccc;
+	padding: 0px;
+	display:inline-block;
+}
+.login_style{
+	background:white;
+	border:1px solid #c2f0c2;
+	color:#878792;
+}
+#logout_button{
+	background:white;
+	border:1px solid #c2f0c2;
+	color:#878792;
+}
+
+@import "imageEffect.css";
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/my.js"></script>
+
+</head>
+<body>
+	<div class="headTitle">
+		<a href="index.html"><h1>ddubullim</h1></a>
+	</div>
+	<ul id="menuul">
+		<li class="menu1"><a href="content.html">content</a></li>
+		<li class="menu1"><a href="like.html">like</a></li>
+		<li class="menu1"><a href="following.html">following</a></li>
+		<li class="menu1" id="logLi"><a href="#" id="login">login</a></li>			
+	</ul>
+	<div id="content">
+	<ul>
+		<li id="im"><a href="test.html"><img src="./image/white.png"></a></li>
+		<li id="im"><a href="test.html"><img src="./image/white.png"></a></li>
+		<li id="im"><a href="test.html"><img src="./image/white.png"></a></li>
+		<li id="im"><a href="test.html"><img src="./image/white.png"></a></li> 
+		<li id="im"><a href="test.html"><img src="./image/white.png"></a></li>
+		<li id="im"><a href="test.html"><img src="./image/white.png"></a></li>
+	</ul>
+	</div>
+	<div class="profile">
+		<div id="login_div">
+		<form>
+			ID <input type="text" id="id" class="login_style"><br>
+			PW <input type="password" id="pw" class="login_style"><br><br>
+			<input type="button" id="login_button" value="login" class="login_style">
+			<input type="button" id="sign_button" value="sign in" class="login_style"> 
+		</form>
+		</div>
+		
+		<button id="logout_button" style="display:none;">log out</button>
+		
+		<div id="sign_div" style="display:none;">
+		<form>
+			ID <input type="text" id="id" class="login_style"><br>
+			PW <input type="password" id="pw" class="login_style"><br>
+			name <input type="text" id="name" class="login_style"><br><br>
+			<input type="button" id="sign_send_button" value="sign in" class="login_style">
+		</form>
+		</div>
+	
+	</div>
+</body>
+</html>
